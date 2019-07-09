@@ -10,9 +10,9 @@ Its very easy only contains two steps
         In this project if you run make debug it will do that for you
      
    2. On intellij  create a remote configuration that looks like the diagram below 
-    
+        
+        Note that the container should expose the same port configured in your remote debug configuration
   ![Alt text](screen_shot.png)
   
   
   
-Note that the container should expose the same port configured in your remote debug configuration 
