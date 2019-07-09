@@ -1,0 +1,8 @@
+version: "3.4"
+services:
+  app:
+    build:
+      context: .
+    command: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=8887 -jar out/pass.jar
+    ports:
+      - 8887:8887
