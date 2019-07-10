@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Main {
 
     public static void main (String args[]) throws IOException {
-
+        System.out.println("starting");
         Console c = System.console();
         String login = c.readLine("Enter your login: ");
         char [] oldPassword = c.readPassword("Enter your old password: ");

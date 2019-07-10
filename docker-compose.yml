@@ -3,6 +3,8 @@ services:
   app:
     build:
       context: .
-    command: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=8887 -jar out/pass.jar
+    command: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=0.0.0:5005 -jar out/pass.jar
+    tty: true
+    stdin_open: true
     ports:
-      - 8887:8887
+      - 5005:5005
